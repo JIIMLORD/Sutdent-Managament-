@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#26292B"
+    tools:context=".ActivitySubjectInformation">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#F8F5F5"
+        android:textStyle="bold"
+        android:text="Subject Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="Môn học: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="Android"
+            android:id="@+id/txtSubjectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="Số tín chỉ: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="3"
+            android:id="@+id/txtSubjectCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="Thời gian học: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="3 tháng"
+            android:id="@+id/txtSubjectTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="Địa điểm: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:textColor="#F8F5F5"
+            android:textSize="20sp"
+            android:text="371 nguyễn Kiệm"
+            android:id="@+id/txtSubjectPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

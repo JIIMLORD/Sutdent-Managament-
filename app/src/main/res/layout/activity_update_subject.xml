@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#26292B"
+    tools:context=".ActivityAddSubject">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#F8F5F5"
+        android:text="Update Subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/EditTextUpdateSubjectTitle"
+        android:textColorHint="#F8F5F5"
+        android:hint="Tên môn học"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/EditTextUpdateSubjectCredit"
+        android:textColorHint="#F8F5F5"
+        android:hint="Số tín chỉ"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/EditTextUpdateSubjectTime"
+        android:textColorHint="#F8F5F5"
+        android:hint="Thời gian học"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/EditTextUpdateSubjectPlace"
+        android:textColorHint="#F8F5F5"
+        android:hint="Địa điểm"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+
+    <Button
+        android:background="@drawable/background_button"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/ButtonUpdateSubject"
+        android:textColor="#F8F5F5"
+        android:text="UPDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+</LinearLayout>
