@@ -143,4 +143,17 @@ public class database extends SQLiteOpenHelper {
         int res = db.delete(TABLE_STUDENT,ID_STUDENT+" = "+i,null);
         return res;
     }
+
+    //Cập nhật sv
+    public boolean updateStudent(Student student, int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(STUDENT_NAME,student.getStudent_name());
+        values.put(SEX,student.getSex());
+        values.put(DATE_OF_BIRTH,student.getDate_of_birth());
+        values.put(STUDENT_CODE,student.getStudent_code());
+        db.update(TABLE_SUBJECT,values,ID_STUDENT+" = "+id, null);
+        return true;
+    }
 }
+
