@@ -39,7 +39,7 @@ public class ActivitySubject extends AppCompatActivity {
         listViewSubject = findViewById(R.id.listviewSubject);
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         database = new database(this);
 

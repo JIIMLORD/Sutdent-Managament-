@@ -7,7 +7,7 @@ public class Student {
     private String sex;
     private String student_code;
     private String date_of_birth;
-    private String id_subject;
+    private int id_subject;
 
     public Student(String student_name, String sex, String student_code, String date_of_birth) {
         this.student_name = student_name;
@@ -16,7 +16,7 @@ public class Student {
         this.date_of_birth = date_of_birth;
     }
 
-    public Student(String student_name, String sex, String student_code, String date_of_birth, String id_subject) {
+    public Student(String student_name, String sex, String student_code, String date_of_birth, int id_subject) {
         this.student_name = student_name;
         this.sex = sex;
         this.student_code = student_code;
@@ -24,7 +24,7 @@ public class Student {
         this.id_subject = id_subject;
     }
 
-    public Student(int id_student, String student_name, String sex, String student_code, String date_of_birth, String id_subject) {
+    public Student(int id_student, String student_name, String sex, String student_code, String date_of_birth, int id_subject) {
         this.id_student = id_student;
         this.student_name = student_name;
         this.sex = sex;
@@ -73,11 +73,11 @@ public class Student {
         this.date_of_birth = date_of_birth;
     }
 
-    public String getId_subject() {
+    public int getId_subject() {
         return id_subject;
     }
 
-    public void setId_subject(String id_subject) {
+    public void setId_subject(int id_subject) {
         this.id_subject = id_subject;
     }
 }
