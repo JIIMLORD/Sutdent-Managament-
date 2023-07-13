@@ -43,27 +43,30 @@
             </TextView>
         </LinearLayout>
     </LinearLayout>
+
     <ImageButton
-        android:src="@drawable/baseline_subject_24"
-        android:layout_marginTop="25dp"
         android:id="@+id/subjectinformation"
         android:layout_width="50dp"
-        android:layout_height="50dp">
-    </ImageButton>
-    <ImageButton
-        android:layout_marginLeft="5dp"
-        android:src="@drawable/baseline_update_24"
+        android:layout_height="50dp"
         android:layout_marginTop="25dp"
+        android:contentDescription="information"
+        android:src="@drawable/baseline_subject_24"></ImageButton>
+
+    <ImageButton
         android:id="@+id/subjectupdate"
         android:layout_width="50dp"
-        android:layout_height="50dp">
-    </ImageButton>
-    <ImageButton
+        android:layout_height="50dp"
         android:layout_marginLeft="5dp"
-        android:src="@drawable/baseline_delete_24"
         android:layout_marginTop="25dp"
+        android:contentDescription="update"
+        android:src="@drawable/baseline_update_24"></ImageButton>
+
+    <ImageButton
         android:id="@+id/subjectdelete"
         android:layout_width="50dp"
-        android:layout_height="50dp">
-    </ImageButton>
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="delete"
+        android:src="@drawable/baseline_delete_24"></ImageButton>
 </LinearLayout>
