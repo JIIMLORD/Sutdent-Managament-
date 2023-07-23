@@ -79,16 +79,13 @@ public class ActivityStudent extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.menuaddstudent:
-                Intent intent = new Intent(ActivityStudent.this, ActivityStudent.class);
-                intent.putExtra("id_subject",id_subject);
-                startActivity(intent);
-                break;
-            default:
-                Intent intent1 = new Intent(ActivityStudent.this, ActivitySubject.class);
-                startActivity(intent1);
-                break;
+        if (item.getItemId() == R.id.menuaddstudent) {
+            Intent intent = new Intent(ActivityStudent.this, ActivityStudent.class);
+            intent.putExtra("id_subject", id_subject);
+            startActivity(intent);
+        } else {
+            Intent intent1 = new Intent(ActivityStudent.this, ActivitySubject.class);
+            startActivity(intent1);
         }
         return super.onOptionsItemSelected(item);
     }

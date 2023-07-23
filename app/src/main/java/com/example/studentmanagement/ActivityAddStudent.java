@@ -73,10 +73,10 @@ public class ActivityAddStudent extends AppCompatActivity {
                 } else {
                     Student student = CreateStudent(id_subject);
                     database.AddStudent(student);
-                    Intent intent = new Intent(ActivityAddStudent.this, ActivityStudent.class);
+                    Intent intent = new Intent(ActivityAddStudent.this, ActivityAddStudent.class);
                     intent.putExtra("id_subject", id_subject);
                     startActivity(intent);
-                    Toast.makeText(ActivityStudent, "more success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityAddStudent.this, "more success", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -93,7 +93,7 @@ public class ActivityAddStudent extends AppCompatActivity {
 
     }
 
-    private Student CreateStudent(int ) {
+    private Student CreateStudent(int id_subject ) {
 
         String name = editTextStudentName.getText().toString().trim();
         String code = editTextStudentCode.getText().toString().trim();
@@ -106,7 +106,7 @@ public class ActivityAddStudent extends AppCompatActivity {
                 sex = "Female";
 
         }
-        Student student = new Student( sex, code, birthday, id_subject);
+        Student student = new Student(name, sex, code, birthday, id_subject);
         return student;
 
     }

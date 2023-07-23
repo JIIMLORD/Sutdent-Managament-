@@ -55,8 +55,8 @@ public class ActivityAddSubject extends AppCompatActivity {
             public void onClick(View view) {
                 String subjecttitle = edtSubjectTitle.getText().toString().trim();
                 String credit = edtSubjectCredit.getText().toString().trim();
-                String time = edtSubjectTime.getFontFeatureSettings().trim().trim();
-                String place = edtSubjectPlace.getFontFeatureSettings().toString().trim();
+                String time = edtSubjectTime.getText().toString().trim();
+                String place = edtSubjectPlace.getText().toString().trim();
 
                 //Nếu dữ liệu chưa nhập đủ
                 if(subjecttitle.equals("") || credit.equals("") || time.equals("") || place.equals("")){
