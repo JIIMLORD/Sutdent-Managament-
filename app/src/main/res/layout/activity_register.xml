@@ -99,11 +99,12 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signupbtn"
         android:layout_width="87dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/repassword"
         android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
         android:backgroundTint="@color/design_default_color_background"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
         android:text="REGISTER" />
 
 
