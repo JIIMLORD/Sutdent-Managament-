@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialogexit);
 
         //Tắt click ngoài là thoát
-        dialog.setCanceledOnTouchOutside(false);
+        dialog.setCanceledOnTouchOutside(true);
 
         Button btnYes = dialog.findViewById(R.id.btnYes);
         Button btnNo = dialog.findViewById(R.id.btnNo);
