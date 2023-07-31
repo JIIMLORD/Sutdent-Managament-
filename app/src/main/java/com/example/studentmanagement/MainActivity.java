@@ -94,5 +94,6 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialoginformation);
         dialog.show();
     }
+    //Angay
     //Run...
 }
