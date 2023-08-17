@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnAuthor = findViewById(R.id.btnAuthor);
-        btnExit = findViewById(R.id.btnExit);
-        btnSubject = findViewById(R.id.btnSubject);
+        btnAuthor = findViewById(R.id.buttonAuthor);
+        btnExit = findViewById(R.id.buttonExit);
+        btnSubject = findViewById(R.id.buttonSubject);
 
         //Click tác giả
         btnAuthor.setOnClickListener(new View.OnClickListener() {

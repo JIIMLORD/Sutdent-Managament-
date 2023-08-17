@@ -34,19 +34,19 @@ public class database extends SQLiteOpenHelper {
     private static String DATE_OF_BIRTH = "dateofbirth";
 
     //Tạo bảng môn học
-    private String SQLQuery = "CREATE TABLE " + TABLE_SUBJECT +" ( "+ID_SUBJECT+" INTERGER PRIMARY KEY AUTOINCREMENT, "
+    private String SQLQuery = "CREATE TABLE " + TABLE_SUBJECT +" ( "+ID_SUBJECT+" INTEGER PRIMARY KEY AUTOINCREMENT, "
             +SUBJECT_TITLE+" TEXT, "
-            +CREIDTS+" INTERGER, "
+            +CREIDTS+" INTEGER, "
             +TIME+" TEXT, "
             + PLACE+" TEXT) ";
 
     //Tạo bảng sinh viên
-    private String SQLQuery1 = "CREATE TABLE " + TABLE_STUDENT +" ( "+ID_STUDENT+" interger primary key AUTOINCREMENT, "
+    private String SQLQuery1 = "CREATE TABLE " + TABLE_STUDENT +" ( "+ID_STUDENT+" integer primary key AUTOINCREMENT, "
             +STUDENT_NAME+" TEXT, "
             +SEX+" TEXT, "
             +STUDENT_CODE+" TEXT, "
             +DATE_OF_BIRTH+" TEXT, "
-            +ID_STUDENT+" INTERGER , FOREIGN KEY ( "+ID_SUBJECT +" ) REFERENCES "+
+            +ID_SUBJECT+" INTEGER , FOREIGN KEY ( "+ID_SUBJECT +" ) REFERENCES "+
             TABLE_SUBJECT+"("+ID_SUBJECT+"))";
 
     public database(@Nullable Context context) {

@@ -21,7 +21,7 @@
     <Button
         android:background="@drawable/background_button"
         android:layout_marginTop="90dp"
-        android:id="@+id/btnSubject"
+        android:id="@+id/buttonSubject"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:text="Subject"
@@ -31,7 +31,7 @@
     <Button
         android:background="@drawable/background_button"
         android:layout_marginTop="20dp"
-        android:id="@+id/btnAuthor"
+        android:id="@+id/buttonAuthor"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:text="Author"
@@ -41,7 +41,7 @@
     <Button
         android:background="@drawable/background_button"
         android:layout_marginTop="20dp"
-        android:id="@+id/btnExit"
+        android:id="@+id/buttonExit"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:text="Exit"
