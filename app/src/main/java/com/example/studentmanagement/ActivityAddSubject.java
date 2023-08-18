@@ -93,8 +93,8 @@ public class ActivityAddSubject extends AppCompatActivity {
     private Subject CreaSubject(){
         String subjecttitle = edtSubjectTitle.getText().toString().trim();
         int credit = Integer.parseInt(edtSubjectCredit.getText().toString().trim());
-        String time = edtSubjectTime.getFontFeatureSettings().trim().trim();
-        String place = edtSubjectPlace.getFontFeatureSettings().toString().trim();
+        String time = edtSubjectTime.getText().toString().trim();
+        String place = edtSubjectPlace.getText().toString().trim();
 
         Subject subject = new Subject(subjecttitle, credit, time, place);
         return subject;

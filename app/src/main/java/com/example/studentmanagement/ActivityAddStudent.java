@@ -73,7 +73,7 @@ public class ActivityAddStudent extends AppCompatActivity {
                 } else {
                     Student student = CreateStudent(id_subject);
                     database.AddStudent(student);
-                    Intent intent = new Intent(ActivityAddStudent.this, ActivityAddStudent.class);
+                    Intent intent = new Intent(ActivityAddStudent.this, ActivityStudent.class);
                     intent.putExtra("id_subject", id_subject);
                     startActivity(intent);
                     Toast.makeText(ActivityAddStudent.this, "more success", Toast.LENGTH_SHORT).show();

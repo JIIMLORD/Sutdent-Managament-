@@ -19,6 +19,9 @@
             android:name=".Register"
             android:exported="false" />
         <activity
+            android:name=".ActivityUpdateStudent"
+            android:exported="false" />
+        <activity
             android:name=".ActivityInformationStudent"
             android:exported="false" />
         <activity

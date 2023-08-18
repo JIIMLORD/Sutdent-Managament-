@@ -27,7 +27,7 @@ public class ActivityInformationStudent extends AppCompatActivity {
         String sex = intent.getStringExtra("sex");
         String code = intent.getStringExtra("code");
         String birthday = intent.getStringExtra("birthday");
-        String id_subject = intent.getStringExtra("id_subject");
+
 
         //Gan len textView tuong ung
         txtName.setText(name);

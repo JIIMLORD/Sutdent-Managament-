@@ -95,7 +95,7 @@ public class ActivityUpdateStudent extends AppCompatActivity {
                     database.updateStudent(student,id);
 
                     //Chuyển qua activity student và cập nhật la danh sách sinh viên
-                    Intent intent = new Intent(ActivityUpdateStudent.this,ActivityUpdateStudent.class);
+                    Intent intent = new Intent(ActivityUpdateStudent.this,ActivityStudent.class);
                     //Gửi id của subject
                     intent.putExtra("id_subject",id_subject);
                     startActivity(intent);
@@ -109,6 +109,7 @@ public class ActivityUpdateStudent extends AppCompatActivity {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 dialog.cancel();
             }
         });

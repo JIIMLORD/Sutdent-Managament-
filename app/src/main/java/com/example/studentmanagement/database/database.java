@@ -152,7 +152,7 @@ public class database extends SQLiteOpenHelper {
         values.put(SEX,student.getSex());
         values.put(DATE_OF_BIRTH,student.getDate_of_birth());
         values.put(STUDENT_CODE,student.getStudent_code());
-        db.update(TABLE_SUBJECT,values,ID_STUDENT+" = "+id, null);
+        db.update(TABLE_STUDENT,values,ID_STUDENT+" = "+id, null);
         return true;
     }
 }
