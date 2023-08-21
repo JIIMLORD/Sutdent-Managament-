@@ -80,7 +80,7 @@ public class ActivityStudent extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.menuaddstudent) {
-            Intent intent = new Intent(ActivityStudent.this, ActivityStudent.class);
+            Intent intent = new Intent(ActivityStudent.this, ActivityAddStudent.class);
             intent.putExtra("id_subject", id_subject);
             startActivity(intent);
         } else {
@@ -99,8 +99,6 @@ public class ActivityStudent extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
-
-        super.onBackPressed();
     }
 
     public void information(final int pos){
@@ -110,7 +108,7 @@ public class ActivityStudent extends AppCompatActivity {
 
             if (id == pos)
             {
-                Intent intent = new Intent(ActivityStudent.this,ActivityStudent.class);
+                Intent intent = new Intent(ActivityStudent.this,ActivityInformationStudent.class);
                 intent.putExtra("id",pos);
                 String name = cursor.getString(1);
                 String sex = cursor.getString(2);
@@ -140,7 +138,7 @@ public class ActivityStudent extends AppCompatActivity {
 
             if (id == id_student)
             {
-                Intent intent = new Intent(ActivityStudent.this,ActivityStudent.class);
+                Intent intent = new Intent(ActivityStudent.this,ActivityUpdateStudent.class);
                 intent.putExtra("id",id_student);
                 String name = cursor.getString(1);
                 String sex = cursor.getString(2);
@@ -152,7 +150,6 @@ public class ActivityStudent extends AppCompatActivity {
                 intent.putExtra("sex",sex);
                 intent.putExtra("code",code);
                 intent.putExtra("birthday",birthday);
-                intent.putExtra("id_subject",id_subject);
 
                 startActivity(intent);
 

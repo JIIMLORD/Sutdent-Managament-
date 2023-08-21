@@ -95,15 +95,13 @@ public class ActivityUpdateStudent extends AppCompatActivity {
                     database.updateStudent(student,id);
 
                     //Chuyển qua activity student và cập nhật la danh sách sinh viên
-                    Intent intent = new Intent(ActivityUpdateStudent.this,ActivityUpdateStudent.class);
+                    Intent intent = new Intent(ActivityUpdateStudent.this,ActivityStudent.class);
                     //Gửi id của subject
                     intent.putExtra("id_subject",id_subject);
                     startActivity(intent);
                     Toast.makeText(ActivityUpdateStudent.this, "More Success", Toast.LENGTH_SHORT).show();
 
                 }
-                
-                
             }
         });
         btnNo.setOnClickListener(new View.OnClickListener() {

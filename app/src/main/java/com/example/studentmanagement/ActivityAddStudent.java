@@ -68,12 +68,15 @@ public class ActivityAddStudent extends AppCompatActivity {
                     if (radiobuttonFemale.isChecked())
                         sex = "Female";
                 }
-                if (name.equals("") || code.equals("") || birthday.equals("") || sex.equals("")) {
-                    Toast.makeText(ActivityAddStudent.this, "", Toast.LENGTH_SHORT).show();
-                } else {
+                if (name.equals("") || code.equals("") || birthday.equals("") || sex.equals(""))
+                {
+                    Toast.makeText(ActivityAddStudent.this, "Did not enter enough information", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
                     Student student = CreateStudent(id_subject);
                     database.AddStudent(student);
-                    Intent intent = new Intent(ActivityAddStudent.this, ActivityAddStudent.class);
+                    Intent intent = new Intent(ActivityAddStudent.this, ActivityStudent.class);
                     intent.putExtra("id_subject", id_subject);
                     startActivity(intent);
                     Toast.makeText(ActivityAddStudent.this, "more success", Toast.LENGTH_SHORT).show();
