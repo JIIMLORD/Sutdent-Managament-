@@ -35,7 +35,7 @@ public class ManDangKy extends AppCompatActivity {
                 String email = edtDKEmail.getText().toString();
 
                 TaiKhoan taiKhoan = CreateTaiKhoan();
-                if (taiKhoan.equals("") || matkhau.equals("") || email.equals("")){
+                if (taikhoan.equals(" ") || matkhau.equals(" ") || email.equals(" ")){
                     Log.e("Thông báo : ","Chưa nhập đầy đủ thông tin");
                 }
                 //Nếu đầy đủ thông tin nhập vào thì add tài khoàn vào database
