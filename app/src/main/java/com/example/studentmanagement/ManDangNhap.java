@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,6 +53,11 @@ public class ManDangNhap extends AppCompatActivity {
                     //Lấy dữ liệu và gắn bào biến , dữ liệu idtaikhoan ở ô 0, tài khoản ở ô 1, mật khẩu ở ô 2, email ở ô 3 và phanquyen ở ô 4
                     String datatentaikhoan = cursor.getString(1);
                     String datamatkhau = cursor.getString(2);
+                    if(datatentaikhoan.equals("") && datamatkhau.equals(""))
+                    {
+
+                        Log.e("Thông báo: ", "Tài khoản hoặc mật khẩu sai");
+                    }
 
                     //Nếu tài khoán và mặt khẩu nhập vào từ bàn phím khớp với database
                     if (datatentaikhoan.equals(tentaikhoan) && datamatkhau.equals(matkhau)){

@@ -35,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:hint="Mật khẩu"
+        android:inputType="textPassword"
         android:minHeight="48dp" />
     <Button
         android:id="@+id/dangnhap"
