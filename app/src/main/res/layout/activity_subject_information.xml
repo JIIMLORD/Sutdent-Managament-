@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#26292B"
+    android:background="@drawable/background"
     tools:context=".ActivitySubjectInformation">
 
     <TextView
@@ -14,7 +14,7 @@
         android:textSize="30sp"
         android:textColor="#F8F5F5"
         android:textStyle="bold"
-        android:text="Subject Information"
+        android:text="Thông tin môn học"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
 

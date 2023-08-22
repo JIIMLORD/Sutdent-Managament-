@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#26292B"
-    tools:context=".ActivityStudentInformation">
+    android:background="@drawable/background"
+    tools:context=".ActivityInformationStudent">
 
     <TextView
         android:layout_marginTop="80dp"
@@ -14,7 +14,7 @@
         android:textSize="30sp"
         android:textColor="#F8F5F5"
         android:textStyle="bold"
-        android:text="Student Information"
+        android:text="Thông tin sinh viên"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
 
@@ -29,7 +29,7 @@
         <TextView
             android:textColor="#F8F5F5"
             android:textSize="20sp"
-            android:text="Student name: "
+            android:text="Họ và tên: "
             android:layout_width="wrap_content"
             android:layout_height="match_parent"></TextView>
 
@@ -77,7 +77,7 @@
         <TextView
             android:textColor="#F8F5F5"
             android:textSize="20sp"
-            android:text="Student code: "
+            android:text="Mã số sinh viên: "
             android:layout_width="wrap_content"
             android:layout_height="match_parent"></TextView>
 
@@ -101,7 +101,7 @@
         <TextView
             android:textColor="#F8F5F5"
             android:textSize="20sp"
-            android:text="Date of birth: "
+            android:text="Ngày sinh: "
             android:layout_width="wrap_content"
             android:layout_height="match_parent"></TextView>
 

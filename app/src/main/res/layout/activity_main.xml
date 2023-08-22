@@ -16,7 +16,7 @@
         android:textColor="#F8F5F5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Management"/>
+        android:text="Quản lý sinh viên"/>
 
     <Button
         android:background="@drawable/background_button"
@@ -24,7 +24,7 @@
         android:id="@+id/buttonSubject"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:text="Subject"
+        android:text="Môn học"
         android:layout_width="180dp"
         android:layout_height="wrap_content" />
 
@@ -34,7 +34,7 @@
         android:id="@+id/buttonAuthor"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:text="Author"
+        android:text="Tác giả"
         android:layout_width="180dp"
         android:layout_height="wrap_content" />
 
@@ -44,7 +44,7 @@
         android:id="@+id/buttonExit"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:text="Exit"
+        android:text="Thoát"
         android:layout_width="180dp"
         android:layout_height="wrap_content" />
 

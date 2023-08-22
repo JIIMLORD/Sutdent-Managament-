@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".ManDangNhap">
 <TextView
     android:layout_marginTop="100dp"
     android:layout_gravity="center"
-    android:textColor="#2196F3"
+    android:textColor="#F8F5F5"
     android:textSize="40sp"
     android:textStyle="bold"
     android:text="Đăng nhập"
