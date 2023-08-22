@@ -10,13 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.studentmanagement.database.database;
+import com.example.studentmanagement.database.databasetaikhoan;
 
 public class ManDangNhap extends AppCompatActivity {
 
     EditText edtTaiKhoan, edtMatKhau;
     Button btnDangNhap, btnDangKy;
 
-    com.example.studentmanagement.database.database database;
+    com.example.studentmanagement.database.databasetaikhoan databasetaikhoan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +26,14 @@ public class ManDangNhap extends AppCompatActivity {
 
         AnhXa();
 
-        database = new database(this);
+        databasetaikhoan = new databasetaikhoan(this);
 
         //Tạo sự kiện click button chuyển sang màn hình đăng ký
         btnDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ManDangNhap.this, ManDangKy.class);
+                startActivity(intent);
             }
         });
 
@@ -43,7 +45,7 @@ public class ManDangNhap extends AppCompatActivity {
                 String matkhau = edtMatKhau.getText().toString();
 
                 //Sử dụng con trỏ để lấy dữ liệu gọi tới getData() để lấy tất cả tài khoản từ database
-                Cursor cursor = database.getData();
+                Cursor cursor = databasetaikhoan.getData();
 
                 //Thực hiện vòng lặp để lấy dữ liệu từ Cursor với moveToNext() di chuyển tiếp
                 while (cursor.moveToNext()){
@@ -52,7 +54,7 @@ public class ManDangNhap extends AppCompatActivity {
                     String datamatkhau = cursor.getString(2);
 
                     //Nếu tài khoán và mặt khẩu nhập vào từ bàn phím khớp với database
-                    if (datatentaikhoan.equals(tentaikhoan) && datatentaikhoan.equals(matkhau)){
+                    if (datatentaikhoan.equals(tentaikhoan) && datamatkhau.equals(matkhau)){
                         //Lấy dữ liệu phanquyen và id
                         int phanquyen = cursor.getInt(4);
                         int idd = cursor.getInt(0);

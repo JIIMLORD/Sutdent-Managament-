@@ -48,14 +48,14 @@
         android:minHeight="48dp" />
     <Button
         android:layout_marginTop="20dp"
-        android:id="@+id/btndangky"
+        android:id="@+id/dkdangky"
         android:text="Đăng ký"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
         android:layout_marginTop="20dp"
-        android:id="@+id/btnback"
+        android:id="@+id/dkdangnhap"
         android:text="Trở về"
         android:layout_gravity="center"
         android:layout_width="wrap_content"

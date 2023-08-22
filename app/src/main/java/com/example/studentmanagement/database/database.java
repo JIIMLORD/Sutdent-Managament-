@@ -5,12 +5,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
 
 import com.example.studentmanagement.model.Student;
 import com.example.studentmanagement.model.Subject;
+import com.example.studentmanagement.model.TaiKhoan;
 
 public class database extends SQLiteOpenHelper {
 
@@ -49,28 +51,6 @@ public class database extends SQLiteOpenHelper {
             +ID_SUBJECT+" INTEGER , FOREIGN KEY ( "+ID_SUBJECT +" ) REFERENCES "+
             TABLE_SUBJECT+"("+ID_SUBJECT+"))";
 
-    //biến bảng tài khoản
-    private static String TABLE_TAIKHOAN = "taikhoan";
-    private static String ID_TAI_KHOAN = "idtaikhoan";
-    private static String TEN_TAI_KHOAN = "tentaikhoan";
-    private static String MAT_KHAU = "matkhau";
-    private static String PHAN_QUYEN = "phanquyen";
-    private static String EMAIL = "email";
-
-
-    private Context context;
-
-    //Tạo bảng tài khoản
-    private String SQLQuery2 = "CREATE TABLE "+ TABLE_TAIKHOAN +" ( "+ID_TAI_KHOAN+" INTEGER PRIMARY KEY AUTOINCREMENT, "
-            +TEN_TAI_KHOAN+" TEXT UNIQUE, "
-            +MAT_KHAU+" TEXT, "
-            +EMAIL+" TEXT, "
-            + PHAN_QUYEN+" INTEGER) ";
-    //Insert dữ liệu vào bảng tài khoản
-    //Chú ý phần quyền: 1.Admin / 2.User
-    private String SQLQuery3 = "INSERT INTO TaiKhoan VAlUES (null,'admin','admin','admin@gmail.com',2)";
-    private String SQLQuery4 = "INSERT INTO TaiKhoan VAlUES (null,'Huy','Huy','Huy@gmail.com',1)";
-
     //Tạo bảng tại phương thức này
     public database(@Nullable Context context) {
         super(context, DATABASE_NAME, null,VERSION);
@@ -81,9 +61,6 @@ public class database extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(SQLQuery);
         sqLiteDatabase.execSQL(SQLQuery1);
-        sqLiteDatabase.execSQL(SQLQuery2);
-        sqLiteDatabase.execSQL(SQLQuery3);
-        sqLiteDatabase.execSQL(SQLQuery4);
     }
 
     @Override
@@ -183,10 +160,5 @@ public class database extends SQLiteOpenHelper {
         return true;
     }
 
-    public Cursor getData(){
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res = db.rawQuery("SELECT * FROM " + TABLE_TAIKHOAN,null);
-        return res;
-    }
 }
 
