@@ -29,7 +29,7 @@
             <TextView
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:text="MSSV: "
+                android:text="Ngày sinh: "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             </TextView>
@@ -37,7 +37,7 @@
                 android:id="@+id/TextViewStudentCode"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:text="3"
+                android:text="03/01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             </TextView>
@@ -47,6 +47,7 @@
         android:src="@drawable/baseline_subject_24"
         android:layout_marginTop="25dp"
         android:id="@+id/studentinformation"
+        android:contentDescription="information"
         android:layout_width="50dp"
         android:layout_height="50dp">
     </ImageButton>
@@ -55,6 +56,7 @@
         android:src="@drawable/baseline_update_24"
         android:layout_marginTop="25dp"
         android:id="@+id/studentupdate"
+        android:contentDescription="information"
         android:layout_width="50dp"
         android:layout_height="50dp">
     </ImageButton>
@@ -63,6 +65,7 @@
         android:src="@drawable/baseline_delete_24"
         android:layout_marginTop="25dp"
         android:id="@+id/studentdelete"
+        android:contentDescription="information"
         android:layout_width="50dp"
         android:layout_height="50dp">
     </ImageButton>
